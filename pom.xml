@@ -67,9 +67,9 @@
         <!-- netty -->
         <dependency>
             <groupId>io.netty</groupId>
-            <artifactId>netty-all</artifactId>
-            <version>${netty.version}</version>
+            <artifactId>netty-example</artifactId>
         </dependency>
+
     </dependencies>
 
     <build>

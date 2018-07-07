@@ -9,7 +9,7 @@ import io.netty.util.CharsetUtil;
  * @author: luoxiaoxiao
  * @date: 2018-07-01 15:49
  */
-public class DiscardServerHandler extends ChannelInboundHandlerAdapter {
+public class EchoServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         ByteBuf in = (ByteBuf) msg;
@@ -32,5 +32,7 @@ public class DiscardServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         cause.printStackTrace();
+        // Close the connection when an exception is raised.
+        ctx.close();
     }
 }
