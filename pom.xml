@@ -65,9 +65,16 @@
             <scope>test</scope>
         </dependency>
         <!-- netty -->
+        <!-- 学习官方demo时用 -->
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-example</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>netty-tcnative</artifactId>
+                    <groupId>io.netty</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
     </dependencies>
