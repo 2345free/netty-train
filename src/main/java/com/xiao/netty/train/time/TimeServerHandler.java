@@ -1,6 +1,6 @@
 package com.xiao.netty.train.time;
 
-import io.netty.buffer.ByteBuf;
+import com.xiao.netty.train.pojo.UnixTime;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
@@ -14,8 +14,11 @@ public class TimeServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        final ByteBuf time = ctx.alloc().buffer(4);
-        time.writeInt((int) (System.currentTimeMillis() / 1000L + 2208988800L));
+//        final ByteBuf time = ctx.alloc().buffer(4);
+//        time.writeInt((int) (System.currentTimeMillis() / 1000L + 2208988800L));
+
+        // 使用pojo代替ByteBuf
+        UnixTime time = new UnixTime();
 
         final ChannelFuture f = ctx.writeAndFlush(time);
 //        f.addListener(new ChannelFutureListener() {
