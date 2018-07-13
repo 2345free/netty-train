@@ -1,6 +1,6 @@
 package com.xiao.netty.train.chat.app.common;
 
-import com.xiao.netty.train.chat.app.module.UserInfo;
+import com.xiao.netty.train.chat.app.model.UserInfo;
 import io.netty.util.AttributeKey;
 import org.apache.commons.lang3.RandomUtils;
 import org.apache.commons.lang3.StringUtils;

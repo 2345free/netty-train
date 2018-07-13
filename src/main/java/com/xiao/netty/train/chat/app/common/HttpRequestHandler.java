@@ -1,6 +1,6 @@
 package com.xiao.netty.train.chat.app.common;
 
-import com.xiao.netty.train.chat.app.module.UserInfo;
+import com.xiao.netty.train.chat.app.model.UserInfo;
 import io.netty.channel.*;
 import io.netty.handler.codec.http.*;
 import io.netty.handler.ssl.SslHandler;

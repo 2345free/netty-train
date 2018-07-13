@@ -1,6 +1,6 @@
 package com.xiao.netty.train.chat.app.controller;
 
-import com.xiao.netty.train.chat.app.module.UserInfo;
+import com.xiao.netty.train.chat.app.model.UserInfo;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

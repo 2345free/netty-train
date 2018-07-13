@@ -1,4 +1,4 @@
-package com.xiao.netty.train.chat.app.module;
+package com.xiao.netty.train.chat.app.model;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import com.xiao.netty.train.chat.app.common.ChatConstants;

@@ -2,7 +2,7 @@ package com.xiao.netty.train.chat.app.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.xiao.netty.train.chat.app.common.ChatConstants;
-import com.xiao.netty.train.chat.app.module.UserInfo;
+import com.xiao.netty.train.chat.app.model.UserInfo;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;

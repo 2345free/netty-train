@@ -2,8 +2,8 @@ package com.xiao.netty.train.chat.app.common;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
-import com.xiao.netty.train.chat.app.module.ChatMessage;
-import com.xiao.netty.train.chat.app.module.UserInfo;
+import com.xiao.netty.train.chat.app.model.ChatMessage;
+import com.xiao.netty.train.chat.app.model.UserInfo;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
